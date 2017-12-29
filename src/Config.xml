@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<aop:aspectj-autoproxy />
+
+	<bean class="com.app.Employee" name="emp">
+		<property name="name">
+			<value>employee</value>
+		</property>
+		<property name="type">
+
+			<value>10</value>
+		</property>
+
+	</bean>
+
+	<bean class="com.one.two.Circle" name="c1">
+		<property name="name">
+			<value>circle</value>
+		</property>
+		<property name="type">
+			<value>20</value>
+		</property>
+
+	</bean>
+
+	<bean class="com.one.Rectangle" name="r1">
+		<property name="name">
+			<value>rectangle</value>
+		</property>
+		<property name="type">
+			<value>30</value>
+		</property>
+
+	</bean>
+
+	<bean class="com.one.three.Shape" name="s1">
+		<property name="name">
+
+			<value>shape</value>
+		</property>
+
+		<property name="type">
+			<value>40</value>
+
+		</property>
+
+	</bean>
+
+	<bean class="com.app.module.Student" name="std">
+		<property name="name">
+			<value>student</value>
+		</property>
+		<property name="type">
+			<value>50</value>
+		</property>
+
+	</bean>
+
+	<bean class="com.one.two.Design" name="d1">
+		<property name="name">
+			<value>design</value>
+		</property>
+		<property name="type">
+			<value>60</value>
+		</property>
+
+	</bean>
+
+	<bean class="com.app.SampleAspectEx"></bean>
+
+</beans>

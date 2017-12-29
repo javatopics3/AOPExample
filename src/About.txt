@@ -1,0 +1,1 @@
+This is a Java Project using jars in BuildPath it is a working project ok.
