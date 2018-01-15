@@ -1,1 +1,17 @@
 This is a Java Project using jars in BuildPath it is a working project ok.
+The reference check will return false, which means Spring Singletons don't work like they said earlier
+A Spring Singleton does not work like a Java Singleton.
+So it is clear that for a given id, a Spring container maintains only one shared instance in a singleton cache.
+https://dzone.com/articles/an-interview-question-on-spring-singletons
+Spring Singletons are not Java Singletons.
+https://javabeat.net/spring-singleton-java-singleton/
+Java singleton class is per classloader and Spring’s singleton is per application context.
+Singleton scope is the default scope for spring beans.
+The Java singleton is scoped by the Java class loader, the Spring singleton is scoped by the container context. ... You may have many instances of that class in your application, but only one will be created for that bean. You may even have multiple beans of the same class all declared as singleton.
+
+What is the difference between spring Singleton and Java Singleton?
+The Java singleton is scoped by the Java class loader, the Spring singleton is scoped by the container context. ... You may have many instances of that class in your application, but only one will be created for that bean. You may even have multiple beans of the same class all declared as singleton.
+
+Why Singleton is not thread safe in spring?
+Spring just manage the life cycle of singleton bean and maintains single instance of object. Thread safety has nothing to do with it. becuase you could have a reference to non-threadsafe objects in your singleton. But if you don't, and you use spring to inject any instance variables then yes they are thread safe.
+
