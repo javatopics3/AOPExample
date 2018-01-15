@@ -15,3 +15,10 @@ The Java singleton is scoped by the Java class loader, the Spring singleton is s
 Why Singleton is not thread safe in spring?
 Spring just manage the life cycle of singleton bean and maintains single instance of object. Thread safety has nothing to do with it. becuase you could have a reference to non-threadsafe objects in your singleton. But if you don't, and you use spring to inject any instance variables then yes they are thread safe.
 
+what is aop in spring?
+One of the key components of Spring Framework is the Aspect oriented programming (AOP) framework. Aspect-Oriented Programming entails breaking down program logic into distinct parts called so-called concerns. ... The key unit of modularity in OOP is the class, whereas in AOP the unit of modularity is the aspect.
+
+advantages of aop in spring?
+(Such concerns are often termed crosscutting concerns.) One of the key components of Spring is the AOP framework. ... The most important such service is declarative transaction management, which builds on Spring's transaction abstraction. To allow users to implement custom aspects, complementing their use of OOP with AOP
+
+
